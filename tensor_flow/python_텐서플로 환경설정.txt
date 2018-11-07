@@ -1,0 +1,17 @@
+# python 3.7 버전에서는 아직 tensorflow 가 돌아가지 않음.
+# 방법 1. 파이썬 버전을 3.6 버전으로 설치
+# 방법 2. annaconda를 이용하여 3.6 가상머신을 만들어 사용
+	# 아나콘다를 실행시킨후
+	# conda create -n tensorflow python=3.6
+	# activate tensorflow
+	# pip install --upgrade tensorflow
+	# 설치가 끝나면 deactive 한 후 빠져나옴
+	# 파이참 or 주피터 노트북으로 들어가 새로운 프로젝트를 tensorflow _ ptyhon version 3.6 으로 생성
+
+# -*- coding: utf-8 -*-
+import os
+import tensorflow as tf
+
+os.environ["TF_CPP_MIN_LOG_LEVEL"]='3'
+
+코드 위에 추가하여, warning 이 뜨지 않게 만든다.
