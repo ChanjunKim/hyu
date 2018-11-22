@@ -16,11 +16,11 @@ time.sleep(random.randrange(3,6))
 # 아이디와 비밀번호도 키보드가 입력한 것처럼 하나하나씩 입력한다.
 
 # 내 아이디랑 비밀번호를 '' 안에 적습니다.
-for id in 'nice3803':
+for id in '---':
     time.sleep(0.02)
     driver.find_element_by_name('id').send_keys(id)
 time.sleep(random.randrange(1, 3))
-for pw in '10torldi123':
+for pw in '---':
     time.sleep(0.02)
     driver.find_element_by_name('pw').send_keys(pw)
 time.sleep(random.randrange(1, 3))
